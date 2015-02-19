@@ -5,10 +5,12 @@ body {
     margin: 0px auto;
 }
 
-p.datetime { float: right; font-size: 0.8em; }
-div.alert1 { overflow: hidden; border: solid 1px #888888; background: #bbbbbb; }
-div.alert2 { overflow: hidden; border: solid 1px #888888; background: #ffff88; }
-div.alert3 { overflow: hidden; border: solid 1px #888888; background: #ffbb88; }
-div.alert4 { overflow: hidden; border: solid 1px #888888; background: #ff8888; }
-div.alert5 { overflow: hidden; border: solid 1px #888888; background: #ff4444; }
+td.description { width: 100%; }
+td.datetime { width: 0%; vertical-align: top; }
+div.alert { border: solid 1px #888888; }
+div.c1 { background: #bbbbbb; }
+div.c2 { background: #ffff88; }
+div.c3 { background: #ffbb88; }
+div.c4 { background: #ff8888; }
+div.c5 { background: #ff4444; }
 	
