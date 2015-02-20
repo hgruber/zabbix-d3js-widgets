@@ -14,3 +14,50 @@ div.c3 { background: #ffbb88; }
 div.c4 { background: #ff8888; }
 div.c5 { background: #ff4444; }
 div.ack { background: #bbbbff; }
+
+svg {
+	font: 13px sans-serif;
+	border: 1px solid #888;
+	background-size: 60%;
+}
+.axis path {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.axis line {
+	fill: none;
+	stroke: #ccc;
+	shape-rendering: crispEdges;
+}
+.axis text {
+	font-family: arial;
+	color: #000;
+}
+.bar {
+	stroke-width: 1;
+	opacity: 0;
+}
+.legend {
+	stroke: #000;
+	stroke-width: 0.5;
+}
+.legendtext {
+	stroke-width: 0.0;
+	fill: #000;
+}
+.legendback {
+	color: #fff;
+	stroke-width: 0.0;
+	fill-opacity: 0.3;
+}
+.fog {
+	stroke-width: 0.0;
+	fill: #000;
+	fill-opacity: 0.3;
+}
+.brush .extent {
+	stroke: #fff;
+	fill-opacity: .3;
+	shape-rendering: crispEdges;
+}

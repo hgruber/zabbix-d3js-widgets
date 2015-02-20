@@ -10,25 +10,31 @@
 <script type="text/javascript" charset="utf-8" src="lib/d3zabbix.js"></script>
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function(){
-		trigger = new triggerTable({
-		'server': {
-			'url': 'https://<domain>/zabbix/api_jsonrpc.php',
-			'username': 'user',
-			'password': 'password'
-		},
-		'bindTo': '#triggers',
-		'maxItems': 20,
-		'minPriority': 2,
-		'refresh': 10,
-		'monitored': 1,
-		'withLastEventUnacknowledged': 1,
-		'animation': 2000,
-		'oldDelayed': 1
-	});
+    diagram = new timeSeries({
+        'bindTo': '#diagram'
+    }); 
+    trigger = new triggerTable({
+        'server': {
+            'url': 'https://zabbix.ffm.de.int.atosworldline.com/zabbix-custom/api_jsonrpc.php',
+            'username': 'ns-auth',
+            'password': 'start!321'
+        },
+        'bindTo': '#triggers',
+        'maxItems': 20,
+        'minPriority': 2,
+        'groupids': [ 6, 8, 51, 76, 118, 140, 291 ],
+        'refresh': 10,
+        'monitored': 1,
+        'withLastEventUnacknowledged': 1,
+        'animation': 2000,
+        'oldDelayed': 1
+    });
 })
 </script>
 <body>
-<h1>zabbix-d3js-widgets: triggerTable</h1>
+<h2>timeSeries</h2>
+<div id="diagram" style="margin: 20px; border: solid 1px #888; height: 300px;"></div>
+<h2>triggerTable</h2>
 <div id="triggers" style="margin: 20px; border: solid 1px #888;"></div>
 </body>
 </html>
