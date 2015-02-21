@@ -18,17 +18,14 @@ div.ack { background: #bbbbff; }
 svg {
 	font: 13px sans-serif;
 	border: 1px solid #888;
-	background-size: 60%;
 }
 .axis path {
 	fill: none;
 	stroke: #000;
-	shape-rendering: crispEdges;
 }
 .axis line {
 	fill: none;
 	stroke: #ccc;
-	shape-rendering: crispEdges;
 }
 .axis text {
 	font-family: arial;

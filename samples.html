@@ -10,24 +10,24 @@
 <script type="text/javascript" charset="utf-8" src="lib/d3zabbix.js"></script>
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function(){
-    diagram = new timeSeries({
+    var diagram = new timeSeries({
         'bindTo': '#diagram'
     }); 
-    trigger = new triggerTable({
-        'server': {
-            'url': 'https://zabbix.ffm.de.int.atosworldline.com/zabbix-custom/api_jsonrpc.php',
-            'username': 'ns-auth',
-            'password': 'start!321'
-        },
+    var trigger = new triggerTable({
         'bindTo': '#triggers',
         'maxItems': 20,
         'minPriority': 2,
-        'groupids': [ 6, 8, 51, 76, 118, 140, 291 ],
+//        'groupids': [ 6, 8, 51, 76, 118, 140, 291 ],
         'refresh': 10,
         'monitored': 1,
         'withLastEventUnacknowledged': 1,
         'animation': 2000,
         'oldDelayed': 1
+    });
+    server = new serverHandle({
+        'url': 'https://<domain>/zabbix/api_jsonrpc.php',
+        'username': 'user',
+        'password': 'password'
     });
 })
 </script>
