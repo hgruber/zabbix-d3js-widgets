@@ -8,6 +8,7 @@
 <script type="text/javascript" charset="utf-8" src="http://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="lib/jqzabbix.js"></script>
 <script type="text/javascript" charset="utf-8" src="lib/d3zabbix.js"></script>
+<script type="text/javascript" charset="utf-8" src="my-credentials.js"></script>
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function(){
     var diagram = new timeSeries({
@@ -17,7 +18,7 @@ $(document).ready(function(){
         'bindTo': '#triggers',
         'maxItems': 20,
         'minPriority': 2,
-//        'groupids': [ 6, 8, 51, 76, 118, 140, 291 ],
+        'groupids': groupids, // put in an array with your host group ids or comment out
         'refresh': 10,
         'monitored': 1,
         'withLastEventUnacknowledged': 1,
@@ -25,9 +26,9 @@ $(document).ready(function(){
         'oldDelayed': 1
     });
     server = new serverHandle({
-        'url': 'https://<domain>/zabbix/api_jsonrpc.php',
-        'username': 'user',
-        'password': 'password'
+        'url': url,
+        'username': username,
+        'password': password
     });
 })
 </script>

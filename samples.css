@@ -31,9 +31,10 @@ svg {
 	font-family: arial;
 	color: #000;
 }
-.bar {
-	stroke-width: 1;
-	opacity: 0;
+path {
+    stroke: steelblue;
+    stroke-width: 1;
+    fill: none;
 }
 .legend {
 	stroke: #000;
