@@ -8,8 +8,8 @@ The widgets provide a very simple way to easily integrate zabbix information on 
 installation
 ============
 * copy the files to your document root
-* provide the zabbix api url and credentials in samples.html
-* provide the zabbix patch for cross domain requests
+* provide the zabbix api url and credentials in samples.html (https://<domain>/zabbix/api_jsonrpc.php)
+* for zabbix < 2.4: provide the zabbix patch for cross site requests (https://support.zabbix.com/browse/ZBXNEXT-1377)
 
 timeSeries
 ==========
