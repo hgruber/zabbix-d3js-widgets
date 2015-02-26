@@ -12,13 +12,14 @@
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function(){
     var diagram = new timeSeries({
-        'bindTo': '#diagram'
+        'bindTo': '#diagram',
+        'itemids': [ 23884 ] // put in your zabbix item id
     }); 
     var trigger = new triggerTable({
         'bindTo': '#triggers',
         'maxItems': 20,
         'minPriority': 2,
-        'groupids': groupids, // put in an array with your host group ids or comment out
+//        'groupids': groupids, // put in an array with your host group ids or comment out
         'refresh': 10,
         'monitored': 1,
         'withLastEventUnacknowledged': 1,

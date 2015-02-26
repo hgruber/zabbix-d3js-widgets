@@ -31,11 +31,6 @@ svg {
 	font-family: arial;
 	color: #000;
 }
-path {
-    stroke: steelblue;
-    stroke-width: 1;
-    fill: none;
-}
 .legend {
 	stroke: #000;
 	stroke-width: 0.5;
