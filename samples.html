@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <title>zabbix-d3js-widgets: triggerTable</title>
 <link rel="stylesheet" type="text/css" href="samples.css" media="screen" />
-<script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="lib/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="lib/d3.v3.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="lib/jqzabbix.js"></script>
 <script type="text/javascript" charset="utf-8" src="lib/d3zabbix.js"></script>
 <script type="text/javascript" charset="utf-8" src="my-credentials.js"></script>
@@ -13,7 +13,7 @@
 $(document).ready(function(){
     var diagram = new timeSeries({
         'bindTo': '#diagram',
-        'itemids': [ 23884 ] // put in your zabbix item id
+        'itemids': [ 359883 ], //, 359874 ] // put in your zabbix item id
     }); 
     var trigger = new triggerTable({
         'bindTo': '#triggers',
