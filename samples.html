@@ -13,7 +13,8 @@
 $(document).ready(function(){
     var diagram = new timeSeries({
         'bindTo': '#diagram',
-        'itemids': [ 359883 ], //, 359874 ] // put in your zabbix item id
+        'itemids': items, // put in your zabbix item id: [ 12345 ],
+        'mouseLocksOnNearest': 1
     }); 
     var trigger = new triggerTable({
         'bindTo': '#triggers',
