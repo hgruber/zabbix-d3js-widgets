@@ -28,7 +28,7 @@ Another class showing a timeline with trigger status and item values is planned.
 
 links
 =====
-http://www.zabbix.com
-http://d3js.org
-https://github.com/mbostock/d3
-https://github.com/kodai/jqzabbix
+* http://www.zabbix.com
+* http://d3js.org
+* https://github.com/mbostock/d3
+* https://github.com/kodai/jqzabbix
