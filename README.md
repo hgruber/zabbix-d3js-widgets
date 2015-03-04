@@ -21,7 +21,14 @@ triggerTable
 ============
 triggerTable displays all alerting zabbix triggers in an animated table. Animations draw the user's attention to the dashboard when changes occur.
 
-Todos
+todos
 =====
 timeSeries is a class with a high potential for more features. This has to be done very carefully: performance is a critical issue here, transition animations quickly drive the browser to its limits.
 Another class showing a timeline with trigger status and item values is planned. This will help to analyze sequences of incidents when cause and effects are not obvious at first sight.
+
+links
+=====
+http://www.zabbix.com
+http://d3js.org
+https://github.com/mbostock/d3
+https://github.com/kodai/jqzabbix
