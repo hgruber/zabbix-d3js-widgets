@@ -54,3 +54,9 @@ svg {
 	fill-opacity: .3;
 	shape-rendering: crispEdges;
 }
+.gauge {
+	border: 0;
+}
+.itemGauge {
+	display: table-cell;
+}
