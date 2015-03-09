@@ -22,9 +22,9 @@ $(document).ready(function(){
 //        'groupids': groupids, // put in an array with your host group ids or comment out
         'refresh': 10,
         'monitored': 1,
-        'withLastEventUnacknowledged': 1,
+        'withLastEventUnacknowledged': null,
         'animation': 2000,
-        'oldDelayed': 1
+        'oldDelayed': null 
     });
     server = new serverHandle({
         'url': 'http://zabbix.org/zabbix/api_jsonrpc.php',
