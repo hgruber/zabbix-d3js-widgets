@@ -8,12 +8,11 @@
 <script type="text/javascript" charset="utf-8" src="http://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="lib/jqzabbix.js"></script>
 <script type="text/javascript" charset="utf-8" src="lib/d3zabbix.js"></script>
-<script type="text/javascript" charset="utf-8" src="my-credentials.js"></script>
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function(){
     var diagram = new timeSeries({
         'bindTo': '#diagram',
-        'itemids': items, // put in your zabbix item id: [ 12345 ],
+        'itemids': [ 484, 482 ], // put in your zabbix item id: [ 12345 ],
         'mouseLocksOnNearest': 1
     }); 
     var trigger = new triggerTable({
@@ -28,9 +27,9 @@ $(document).ready(function(){
         'oldDelayed': 1
     });
     server = new serverHandle({
-        'url': url,
-        'username': username,
-        'password': password
+        'url': 'http://zabbix.org/zabbix/api_jsonrpc.php',
+        'username': 'guest',
+        'password': ''
     });
 })
 </script>
