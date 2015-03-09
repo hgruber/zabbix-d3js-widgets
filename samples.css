@@ -8,11 +8,11 @@ body {
 td.description { width: 100%; }
 td.datetime { width: 0%; vertical-align: top; }
 div.alert { border: solid 1px #888888; }
-div.c1 { background: #bbbbbb; }
-div.c2 { background: #ffff88; }
-div.c3 { background: #ffbb88; }
-div.c4 { background: #ff8888; }
-div.c5 { background: #ff4444; }
+div.c1 { background: #dbdbdb; }
+div.c2 { background: #d6f6ff; }
+div.c3 { background: #fff6a5; }
+div.c4 { background: #ffb689; }
+div.c5 { background: #ff3838; }
 div.ack { background: #bbbbff; }
 
 svg {
