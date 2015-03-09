@@ -13,6 +13,10 @@ installation
 * for zabbix < 2.4: provide the zabbix patch for cross site requests (https://support.zabbix.com/browse/ZBXNEXT-1377)
 * for saving bandwidth don't forget to enable gzip compression for api calls (usually about 95%)
 
+itemGauge
+=========
+itemGauge shows the last value of a Zabbix item and is refreshed according to the item's update interval. The widget is currently only a wrapper around Tomer Doron's <a href="http://tomerdoron.blogspot.de/2011/12/google-style-gauges-using-d3js.html">google style gauges using d3.js</a>.
+
 timeSeries
 ==========
 timeSeries is a widget to diplay timeseries data from zabbix in a simple to use graph. Intuitive scrolling and panning is provided in realtime doing api calls in the background. 
