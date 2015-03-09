@@ -16,47 +16,51 @@ div.c5 { background: #ff4444; }
 div.ack { background: #bbbbff; }
 
 svg {
-	font: 13px sans-serif;
-	border: 1px solid #888;
+    font: 13px sans-serif;
+    border: 1px solid #888;
 }
 .axis path {
-	fill: none;
-	stroke: #000;
+    fill: none;
+    stroke: #000;
 }
 .axis line {
-	fill: none;
-	stroke: #ccc;
+    fill: none;
+    stroke: #ccc;
 }
 .axis text {
-	font-family: arial;
-	color: #000;
+    font-family: arial;
+    color: #000;
 }
 .legend {
-	stroke: #000;
-	stroke-width: 0.5;
+    stroke: #000;
+    stroke-width: 0.5;
 }
 .legendtext {
-	stroke-width: 0.0;
-	fill: #000;
+    stroke-width: 0.0;
+    fill: #000;
 }
 .legendback {
-	color: #fff;
-	stroke-width: 0.0;
-	fill-opacity: 0.3;
+    color: #fff;
+    stroke-width: 0.0;
+    fill-opacity: 0.3;
 }
 .future {
-	stroke-width: 0.0;
-	fill: #000;
-	fill-opacity: 0.3;
+    stroke-width: 0.0;
+    fill: #000;
+    fill-opacity: 0.3;
 }
 .brush .extent {
-	stroke: #fff;
-	fill-opacity: .3;
-	shape-rendering: crispEdges;
+    stroke: #fff;
+    fill-opacity: .3;
+    shape-rendering: crispEdges;
 }
 .gauge {
-	border: 0;
+    border: 0;
 }
 .itemGauge {
-	display: table-cell;
+    display: table-cell;
+}
+.wgContainer {
+    margin: 20px;
+    border: solid 1px #888;
 }

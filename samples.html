@@ -39,12 +39,12 @@ $(document).ready(function(){
         'itemid': 14,
         'max': 65
     });
-    var diagram = new timeSeries({
+    timeSeries({
         'bindTo': '#diagram',
         'itemids': [ 484, 482 ], // put in your zabbix item id: [ 12345 ],
         'mouseLocksOnNearest': 1
     }); 
-    var trigger = new triggerTable({
+    triggerTable({
         'bindTo': '#triggers',
         'maxItems': 20,
         'minPriority': 2,
@@ -55,7 +55,7 @@ $(document).ready(function(){
         'animation': 2000,
         'oldDelayed': null 
     });
-    server = new serverHandle({
+    serverHandle({
         'url': 'http://zabbix.org/zabbix/api_jsonrpc.php',
         'username': 'guest',
         'password': ''
@@ -64,14 +64,14 @@ $(document).ready(function(){
 </script>
 <body>
 <h2>itemGauge</h2>
-<div class="gaugePanel">
-  <div id="gaugeCpu" class="itemGauge"></div>
-  <div id="gaugeTxn" class="itemGauge"></div>
-  <div id="gaugeTemp" class="itemGauge"></div>
+<div class="wgContainer gaugePanel">
+    <div id="gaugeCpu" class="itemGauge"></div>
+    <div id="gaugeTxn" class="itemGauge"></div>
+    <div id="gaugeTemp" class="itemGauge"></div>
 </div>
 <h2>timeSeries</h2>
-<div id="diagram" style="margin: 20px; border: solid 1px #888; height: 300px;"></div>
+<div id="diagram" class="wgContainer" style="height: 300px;"></div>
 <h2>triggerTable</h2>
-<div id="triggers" style="margin: 20px; border: solid 1px #888;"></div>
+<div id="triggers" class="wgContainer"></div>
 </body>
 </html>
