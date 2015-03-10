@@ -1,9 +1,9 @@
 # zabbix-d3js-widgets
 just some simple javascript widgets for customizable zabbix dashboards
-![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/timeSeries.png)
-![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/triggerTable.png)
+![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/samples.png)
 
 The widgets provide a very simple way to easily integrate zabbix information on your own dashboard. It just uses javascript (jquery, d3, jqzabbix) and the zabbix api to create self-updating animated tables and graphs.
+Have a look at the <a href="http://mein-webportal.de/zabbix-d3js-widgets/samples.html">demo</a>.
 
 installation
 ============
@@ -11,6 +11,10 @@ installation
 * provide the zabbix api url and credentials in samples.html (https://<domain>/zabbix/api_jsonrpc.php)
 * for zabbix < 2.4: provide the zabbix patch for cross site requests (https://support.zabbix.com/browse/ZBXNEXT-1377)
 * for saving bandwidth don't forget to enable gzip compression for api calls (usually about 95%)
+
+itemGauge
+=========
+itemGauge shows the last value of a Zabbix item and is refreshed according to the item's update interval. The widget is currently only a wrapper around Tomer Doron's <a href="http://tomerdoron.blogspot.de/2011/12/google-style-gauges-using-d3js.html">google style gauges using d3.js</a>.
 
 timeSeries
 ==========
@@ -20,7 +24,14 @@ triggerTable
 ============
 triggerTable displays all alerting zabbix triggers in an animated table. Animations draw the user's attention to the dashboard when changes occur.
 
-Todos
+todos
 =====
 timeSeries is a class with a high potential for more features. This has to be done very carefully: performance is a critical issue here, transition animations quickly drive the browser to its limits.
 Another class showing a timeline with trigger status and item values is planned. This will help to analyze sequences of incidents when cause and effects are not obvious at first sight.
+
+links
+=====
+* http://www.zabbix.com
+* http://d3js.org
+* https://github.com/mbostock/d3
+* https://github.com/kodai/jqzabbix
