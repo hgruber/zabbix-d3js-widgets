@@ -54,3 +54,8 @@ svg {
 	fill-opacity: .3;
 	shape-rendering: crispEdges;
 }
+p, h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
