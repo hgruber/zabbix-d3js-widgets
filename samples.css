@@ -47,13 +47,23 @@ svg {
 .future {
     stroke-width: 0.0;
     fill: #000;
-    fill-opacity: 0.3;
+    fill-opacity: 0.2;
 }
-.brush .extent {
-    stroke: #fff;
-    fill-opacity: .3;
-    shape-rendering: crispEdges;
+.bands {
+    stroke: #888;
+    stroke-width: 1px;
 }
+.minutes_even { fill: #dfd; }
+.minutes_odd  { fill: #eee; }
+.hours_even { fill: #ddf; }
+.hours_odd  { fill: #eee; }
+.workday { fill: #eee; }
+.weekend { fill: #fdd; }
+.months_even { fill: #ffd; }
+.months_odd { fill: #eee; }
+.days { stroke: #888; }
+
+
 .gauge {
     border: 0;
 }
