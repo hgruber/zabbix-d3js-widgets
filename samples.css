@@ -61,7 +61,7 @@ svg {
 .weekend { fill: #fdd; }
 .months_even { fill: #ffd; }
 .months_odd { fill: #eee; }
-.days { stroke: #888; }
+.days { fill: #000; }
 
 
 .gauge {
