@@ -31,9 +31,29 @@ svg {
     font-family: arial;
     color: #000;
 }
-.legend {
-    stroke: #000;
-    stroke-width: 0.5;
+.path path.normal {
+    stroke-width: 1;
+    fill: none;
+}
+.path path.minmax {
+    stroke: none;
+    opacity: 0.5;
+}
+.info circle {
+    opacity: 0.6;
+}
+.info text {
+    stroke-width: 0;
+}
+.info rect {
+    stroke: #444;
+    stroke-width: 1;
+    fill: #ccc;
+    opacity: 0.4;
+}
+.info line {
+    stroke-width: 2;
+    stroke: #ccc;
 }
 .legendtext {
     stroke-width: 0.0;
@@ -46,7 +66,7 @@ svg {
     fill-opacity: 0.6;
 }
 .future {
-    stroke-width: 0.0;
+    stroke-width: 0;
     fill: #000;
     fill-opacity: 0.2;
 }
