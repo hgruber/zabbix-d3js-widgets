@@ -37,12 +37,13 @@ svg {
 }
 .legendtext {
     stroke-width: 0.0;
-    fill: #000;
+    color: #000;
 }
 .legendback {
-    color: #fff;
-    stroke-width: 0.0;
-    fill-opacity: 0.3;
+    fill: #fff;
+    stroke-width: 1;
+    stroke: #888;
+    fill-opacity: 0.6;
 }
 .future {
     stroke-width: 0.0;
