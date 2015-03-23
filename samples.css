@@ -74,6 +74,15 @@ svg {
     stroke: #888;
     stroke-width: 1px;
 }
+.warning {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 2px;
+    background-color: #f88;
+    color: #000;
+    border: 1px solid #888;
+}
 .minutes_even { fill: #dfd; }
 .minutes_odd  { fill: #eee; }
 .hours_even { fill: #ddf; }
