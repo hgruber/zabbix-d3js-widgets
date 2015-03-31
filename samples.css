@@ -68,11 +68,9 @@ svg {
 .future {
     stroke-width: 0;
     fill: #000;
-    fill-opacity: 0.2;
+    fill-opacity: 0.4;
 }
 .bands {
-    stroke: #888;
-    stroke-width: 1px;
 }
 .warning {
     position: absolute;
@@ -87,7 +85,8 @@ svg {
 .minutes_odd  { fill: #eee; }
 .hours_even { fill: #ddf; }
 .hours_odd  { fill: #eee; }
-.workday { fill: #eee; }
+.workday_even { fill: #d8d8d8; }
+.workday_odd { fill: #eee; }
 .weekend { fill: #fdd; }
 .months_even { fill: #ffd; }
 .months_odd { fill: #eee; }
