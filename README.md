@@ -24,6 +24,11 @@ triggerTable
 ============
 triggerTable displays all alerting zabbix triggers in an animated table. Animations draw the user's attention to the dashboard when changes occur.
 
+imageReload
+===========
+A simple function for flickerfree image reloads in dashboards.  Provide the image's container id (not the id of the image itself) and the
+refresh interval in seconds. After each timeout the image url will be modified by appending '&refresh=<ts>' and then reloaded in the background. As soon as the image is loaded it will be replaced resulting in flickerfree image updates. This works with one image per element only.
+
 todos
 =====
 timeSeries is a class with a high potential for more features. This has to be done very carefully: performance is a critical issue here, transition animations quickly drive the browser to its limits.
