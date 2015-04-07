@@ -1,6 +1,6 @@
 # zabbix-d3js-widgets
 just some simple javascript widgets for customizable zabbix dashboards
-![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/samples.png)
+![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/screenshots/samples.png)
 
 The widgets provide a very simple way to easily integrate zabbix information on your own dashboard. It just uses javascript (jquery, d3, jqzabbix) and the zabbix api to create self-updating animated tables and graphs.
 Have a look at the <a href="http://mein-webportal.de/zabbix-d3js-widgets/samples.html">demo</a>.
@@ -11,6 +11,7 @@ installation
 * provide the zabbix api url and credentials in samples.html (https://<domain>/zabbix/api_jsonrpc.php)
 * for zabbix < 2.4: provide the zabbix patch for cross site requests (https://support.zabbix.com/browse/ZBXNEXT-1377)
 * for saving bandwidth don't forget to enable gzip compression for api calls (usually about 95%)
+* for saving bandwidth a patch for the trends.get() api call is available (https://support.zabbix.com/browse/ZBXNEXT-1193)
 
 itemGauge
 =========
@@ -18,7 +19,7 @@ itemGauge shows the last value of a Zabbix item and is refreshed according to th
 
 timeSeries
 ==========
-timeSeries is a widget to diplay timeseries data from zabbix in a simple to use graph. Intuitive scrolling and panning is provided in realtime doing api calls in the background. 
+timeSeries is a widget to diplay timeseries data from zabbix in a simple to use graph. Intuitive scrolling and panning is provided in realtime doing api calls in the background. When zooming out for several days a trends.get api call is used to receive data in lower detail.
 
 triggerTable
 ============
@@ -32,7 +33,6 @@ refresh interval in seconds. After each timeout the image url will be modified b
 todos
 =====
 timeSeries is a class with a high potential for more features. This has to be done very carefully: performance is a critical issue here, transition animations quickly drive the browser to its limits.
-Another class showing a timeline with trigger status and item values is planned. This will help to analyze sequences of incidents when cause and effects are not obvious at first sight.
 
 links
 =====
