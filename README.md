@@ -1,6 +1,6 @@
 # zabbix-d3js-widgets
 just some simple javascript widgets for customizable zabbix dashboards
-![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/screenshots/samples.png)
+![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/screenshots/screenshot.png)
 
 The widgets provide a very simple way to easily integrate zabbix information on your own dashboard. It just uses javascript (jquery, d3, jqzabbix) and the zabbix api to create self-updating animated tables and graphs.
 Have a look at the <a href="http://mein-webportal.de/zabbix-d3js-widgets/samples.html">demo</a>.

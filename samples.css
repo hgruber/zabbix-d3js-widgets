@@ -51,8 +51,8 @@ svg {
     opacity: 0.4;
 }
 .info line {
-    stroke-width: 2;
-    stroke: #ccc;
+    stroke-width: 1;
+    stroke: #444;
 }
 .legendtext {
     stroke-width: 0.0;
