@@ -17,7 +17,6 @@ div.ack { background: #bbbbff; }
 
 svg {
     font: 13px sans-serif;
-    border: 1px solid #888;
 }
 .axis path {
     fill: none;
@@ -103,8 +102,15 @@ svg {
     margin: 20px;
     border: solid 1px #888;
 }
+.wgContainerNoBorder {
+    margin: 20px;
+    border: solid 0px;
+}
 p, h2 {
     margin-left: 20px;
     margin-right: 20px;
 }
-
+div > img {
+    max-hight: 100%;
+    max-width: 100%;
+}

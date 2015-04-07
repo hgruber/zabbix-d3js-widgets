@@ -11,8 +11,9 @@
 <script type="text/javascript" charset="utf-8" src="lib/d3zabbix.js"></script>
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function(){
+    imageReload ('#image', 10);
     itemGauge({
-        'bindToId': 'gaugeCpu',
+        'bindToId': '#gaugeCpu',
         'label': 'Idle (%)',
         'itemid': 501,
         'greenZones': [ { from: 25, to: 100 } ],
@@ -20,7 +21,7 @@ $(document).ready(function(){
         'redZones': [ { from: 0, to: 10 } ]
     });
     itemGauge({
-        'bindToId': 'gaugeTxn',
+        'bindToId': '#gaugeTxn',
         'label': 'Txn/s',
         'itemid': 496,
         'max': 1000,
@@ -34,7 +35,7 @@ $(document).ready(function(){
         ]
     });
     itemGauge({
-        'bindToId': 'gaugeTemp',
+        'bindToId': '#gaugeTemp',
         'label': '\xB0C',
         'itemid': 14,
         'max': 65
@@ -63,8 +64,12 @@ $(document).ready(function(){
 })
 </script>
 <body>
+<h2>imageReload</h2>
+<div id="image" class="wgContainerNoBorder">
+    <img src="http://zabbix.org/zabbix/map.php?sysmapid=8&severity_min=0" style="max-height: auto;">
+</div>
 <h2>itemGauge</h2>
-<div class="wgContainer gaugePanel">
+<div class="wgContainerNoBorder">
     <div id="gaugeCpu" class="itemGauge"></div>
     <div id="gaugeTxn" class="itemGauge"></div>
     <div id="gaugeTemp" class="itemGauge"></div>
@@ -72,6 +77,6 @@ $(document).ready(function(){
 <h2>timeSeries</h2>
 <div id="diagram" class="wgContainer" style="height: 300px;"></div>
 <h2>triggerTable</h2>
-<div id="triggers" class="wgContainer"></div>
+<div id="triggers" class="wgContainerNoBorder"></div>
 </body>
 </html>
