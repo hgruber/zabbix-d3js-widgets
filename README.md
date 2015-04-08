@@ -13,6 +13,14 @@ installation
 * for saving bandwidth don't forget to enable gzip compression for api calls (usually about 95%)
 * for saving bandwidth a patch for the trends.get() api call is available (https://support.zabbix.com/browse/ZBXNEXT-1193)
 
+instant sample
+==============
+* clone repository / download zip
+* open `samples.html` in the web browser of your choice.
+
+the `samples.html` is pre-configured to access a demo Zabbix instance located on zabbix.org and shows a sample for each widget.
+due to lack of <a href="https://support.zabbix.com/browse/ZBXNEXT-1193">ZBXNEXT-1193</a> the timeSeries widget makes no use of item trends.
+
 itemGauge
 =========
 itemGauge shows the last value of a Zabbix item and is refreshed according to the item's update interval. The widget is currently only a wrapper around Tomer Doron's <a href="http://tomerdoron.blogspot.de/2011/12/google-style-gauges-using-d3js.html">google style gauges using d3.js</a>.
