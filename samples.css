@@ -38,6 +38,11 @@ svg {
     stroke: none;
     opacity: 0.5;
 }
+.gant rect {
+    stroke: #000000;
+    stroke-width: 1;
+    fill: steelblue;
+}
 .info circle {
     opacity: 0.6;
 }
