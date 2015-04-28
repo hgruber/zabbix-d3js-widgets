@@ -8,10 +8,11 @@ body {
 td.description { width: 100%; }
 td.datetime { width: 0%; vertical-align: top; }
 div.alert { border: solid 1px #888888; }
-div.c1 { background: #dbdbdb; }
-div.c2 { background: #d6f6ff; }
-div.c3 { background: #fff6a5; }
-div.c4 { background: #ffb689; }
+div.c0 { background: #dbdbdb; }
+div.c1 { background: #d6f6ff; }
+div.c2 { background: #fff6a5; }
+div.c3 { background: #ffb689; }
+div.c4 { background: #ff9999; }
 div.c5 { background: #ff3838; }
 div.ack { background: #bbbbff; }
 
@@ -52,7 +53,7 @@ svg {
     stroke: #444;
     stroke-width: 1;
     fill: #ccc;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 .info line {
     stroke-width: 1;
