@@ -11,40 +11,16 @@
 <script type="text/javascript" charset="utf-8" src="lib/d3zabbix.js"></script>
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function(){
-    imageReload ('#image', 10);
-    itemGauge({
-        'bindToId': '#gaugeCpu',
-        'label': 'Idle (%)',
-        'itemid': 501,
-        'greenZones': [ { from: 25, to: 100 } ],
-        'yellowZones': [ { from: 10, to: 25 } ],
-        'redZones': [ { from: 0, to: 10 } ]
-    });
-    itemGauge({
-        'bindToId': '#gaugeTxn',
-        'label': 'Txn/s',
-        'itemid': 496,
-        'max': 1000,
-        'yellowZones': [
-          { from: 25, to: 75 },
-          { from: 750, to: 900 },
-        ],
-        'redZones': [
-          { from: 0, to: 25 },
-          { from: 900, to: 1000 },
-        ]
-    });
-    itemGauge({
-        'bindToId': '#gaugeTemp',
-        'label': '\xB0C',
-        'itemid': 14,
-        'max': 65
-    });
     timeSeries({
-        'bindTo': '#diagram',
-        'itemids': [ 484, 482 ], // put in your zabbix item id: [ 12345 ],
+        'bindTo': '#diagram1',
+        'itemids': [ 591 ], // put in your zabbix item id: [ 12345 ],
         'mouseLocksOnNearest': 1
     }); 
+    timeSeries({
+        'bindTo': '#diagram2',
+        'itemids': [ 623 ], // put in your zabbix item id: [ 12345 ],
+        'mouseLocksOnNearest': 1
+    });
     triggerTable({
         'bindTo': '#triggers',
         'maxItems': 20,
@@ -56,6 +32,15 @@ $(document).ready(function(){
         'animation': 2000,
         'oldDelayed': null 
     });
+    imageReload ('#image', 10);
+    itemGauge({
+        'bindToId': '#gauge',
+        'label': 'Busy (%)',
+        'itemid': 591,
+        'greenZones': [ { from: 0, to: 50 } ],
+        'yellowZones': [ { from: 50, to: 75 } ],
+        'redZones': [ { from: 75, to: 100 } ]
+    });
     serverHandle({
         'url': 'http://zabbix.org/zabbix/api_jsonrpc.php',
         'username': 'guest',
@@ -64,19 +49,18 @@ $(document).ready(function(){
 })
 </script>
 <body>
+<h2>timeSeries (panning and zooming via dragging and scrolling)</h2>
+<div id="diagram1" class="wgContainer" style="height: 250px;"></div>
+<div id="diagram2" class="wgContainer" style="height: 250px;"></div>
+<h2>triggerTable</h2>
+<div id="triggers" class="wgContainerNoBorder"></div>
 <h2>imageReload</h2>
 <div id="image" class="wgContainerNoBorder">
     <img src="http://zabbix.org/zabbix/map.php?sysmapid=8&severity_min=0" style="max-height: auto;">
 </div>
 <h2>itemGauge</h2>
 <div class="wgContainerNoBorder">
-    <div id="gaugeCpu" class="itemGauge"></div>
-    <div id="gaugeTxn" class="itemGauge"></div>
-    <div id="gaugeTemp" class="itemGauge"></div>
+    <div id="gauge" class="itemGauge"></div>
 </div>
-<h2>timeSeries</h2>
-<div id="diagram" class="wgContainer" style="height: 300px;"></div>
-<h2>triggerTable</h2>
-<div id="triggers" class="wgContainerNoBorder"></div>
 </body>
 </html>
