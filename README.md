@@ -48,3 +48,8 @@ links
 * http://d3js.org
 * https://github.com/mbostock/d3
 * https://github.com/kodai/jqzabbix
+
+screenshots
+===========
+![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/screenshots/timeSeriesZbxNext1193.png)
+![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/screenshots/samples.png)
