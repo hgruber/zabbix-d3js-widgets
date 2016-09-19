@@ -3,7 +3,7 @@ just some simple javascript widgets for customizable zabbix dashboards
 ![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/screenshots/screenshot.png)
 
 The widgets provide a very simple way to easily integrate zabbix information on your own dashboard. It just uses javascript (jquery, d3, jqzabbix) and the zabbix api to create self-updating animated tables and graphs.
-Have a look at the <a href="http://mein-webportal.de/zabbix-d3js-widgets/samples.html">demo</a>.
+Have a look at the <a href="http://mein-webportal.de/zabbix-d3js-widgets/samples.html">demo</a>. The use of Chrome is highly encouraged for this demo.
 
 installation
 ============
@@ -11,7 +11,7 @@ installation
 * provide the zabbix api url and credentials in samples.html (https://<domain>/zabbix/api_jsonrpc.php)
 * for zabbix < 2.4: provide the zabbix patch for cross site requests (https://support.zabbix.com/browse/ZBXNEXT-1377)
 * for saving bandwidth don't forget to enable gzip compression for api calls (usually about 95%)
-* for saving bandwidth a patch for the trends.get() api call is available (https://support.zabbix.com/browse/ZBXNEXT-1193)
+* for saving bandwidth zabbix > 3 allows the use of trend.get(). For older versions there's a patch for the trend.get() api call is available (https://support.zabbix.com/browse/ZBXNEXT-1193)
 
 instant sample
 ==============
@@ -19,7 +19,6 @@ instant sample
 * open `samples.html` in the web browser of your choice.
 
 the `samples.html` is pre-configured to access a demo Zabbix instance located on zabbix.org and shows a sample for each widget.
-due to lack of <a href="https://support.zabbix.com/browse/ZBXNEXT-1193">ZBXNEXT-1193</a> the timeSeries widget makes no use of item trends.
 
 itemGauge
 =========
@@ -27,7 +26,7 @@ itemGauge shows the last value of a Zabbix item and is refreshed according to th
 
 timeSeries
 ==========
-timeSeries is a widget to diplay timeseries data from zabbix in a simple to use graph. Intuitive scrolling and panning is provided in realtime doing api calls in the background. When zooming out for several days a trends.get api call is used to receive data in lower detail.
+timeSeries is a widget to diplay timeseries data from zabbix in a simple to use graph. Intuitive scrolling and panning is provided in realtime doing api calls in the background. When zooming out for several days the trend.get() api call is used to receive data in lower detail.
 
 triggerTable
 ============
@@ -41,6 +40,7 @@ refresh interval in seconds. After each timeout the image url will be modified b
 todos
 =====
 timeSeries is a class with a high potential for more features. This has to be done very carefully: performance is a critical issue here, transition animations quickly drive the browser to its limits.
+A gant chart for events is planned. This will be very usefull for problem correlations.
 
 links
 =====
