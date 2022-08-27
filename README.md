@@ -1,4 +1,8 @@
 # zabbix-d3js-widgets
+
+This repository hasn't been updated for some time. In the meantime I started a similar project to get out of library dependency.
+Have a look at [timeseries.js](https://github.com/hgruber/timeseries.js).
+
 just some simple javascript widgets for customizable zabbix dashboards
 ![ScreenShot](https://raw.githubusercontent.com/hgruber/zabbix-d3js-widgets/master/screenshots/screenshot.png)
 
